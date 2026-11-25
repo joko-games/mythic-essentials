@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Mythic Essentials icon: a violet keystone inside a gold timer ring.
+  Drawn for this project. Dedicated to the public domain under CC0 1.0:
+  https://creativecommons.org/publicdomain/zero/1.0/
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="night" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#2a1747"/>
+      <stop offset="1" stop-color="#0c0616"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a0"/>
+      <stop offset="0.5" stop-color="#f2c040"/>
+      <stop offset="1" stop-color="#a8661a"/>
+    </linearGradient>
+    <linearGradient id="stoneLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6b8ff"/>
+      <stop offset="1" stop-color="#a24ee8"/>
+    </linearGradient>
+    <linearGradient id="stoneDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a2fc4"/>
+      <stop offset="1" stop-color="#3a0f73"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#c77dff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#c77dff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background disc -->
+  <circle cx="256" cy="256" r="236" fill="url(#night)"/>
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#5a3a12" stroke-width="10"/>
+
+  <!-- Timer ring: dim track, then the gold part already run -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#3b2a12" stroke-width="30"/>
+  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#gold)" stroke-width="30"
+          stroke-linecap="round" stroke-dasharray="880 1257" transform="rotate(-90 256 256)"/>
+  <!-- Chest marks on the ring -->
+  <g stroke="#fff6d0" stroke-width="10" stroke-linecap="round">
+    <line x1="256" y1="40" x2="256" y2="84" transform="rotate(216 256 256)"/>
+    <line x1="256" y1="40" x2="256" y2="84" transform="rotate(288 256 256)"/>
+  </g>
+
+  <!-- Glow behind the stone -->
+  <circle cx="256" cy="262" r="150" fill="url(#glow)"/>
+
+  <!-- Keystone: a cut gem, light facets left and top, dark facets right and bottom -->
+  <g transform="translate(256 262) scale(1.22) translate(-256 -230)">
+    <g stroke="#1a0833" stroke-width="7" stroke-linejoin="round">
+      <polygon points="256,110 360,200 330,350 182,350 152,200" fill="url(#stoneDark)"/>
+      <polygon points="256,110 152,200 214,214" fill="url(#stoneLight)"/>
+      <polygon points="256,110 214,214 298,214" fill="#d9a2ff"/>
+      <polygon points="256,110 298,214 360,200" fill="#9a48e0"/>
+      <polygon points="152,200 214,214 182,350" fill="#b366f0"/>
+      <polygon points="214,214 298,214 330,350 182,350" fill="url(#stoneDark)"/>
+    </g>
+    <!-- A plus on the front face, as in Mythic+ -->
+    <g stroke="#f6dcff" stroke-width="16" stroke-linecap="round">
+      <line x1="256" y1="246" x2="256" y2="318"/>
+      <line x1="220" y1="282" x2="292" y2="282"/>
+    </g>
+    <!-- Sparkle -->
+    <path d="M206 160 l7 -19 l7 19 l19 7 l-19 7 l-7 19 l-7 -19 l-19 -7 z" fill="#ffffff" fill-opacity="0.9"/>
+  </g>
+</svg>

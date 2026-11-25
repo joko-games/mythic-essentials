@@ -1,0 +1,20 @@
+## Interface: 120105
+## Title: Mythic Essentials
+## Notes: A small Mythic+ window: group DPS, key timer and progress, missing flasks and food.
+## Notes-frFR: Une petite fenêtre Mythique+ : DPS du groupe, chrono et avancée de la clé, flacons et nourriture manquants.
+## Author: Primo
+## Version: @project-version@
+## SavedVariables: MythicEssentialsDB
+## IconTexture: Interface\AddOns\MythicEssentials\Media\Icon
+## AddonCompartmentFunc: MythicEssentials_OnAddonCompartmentClick
+## Category-enUS: Dungeons & Raids
+## Category-frFR: Donjons et raids
+
+Locales\frFR.lua
+Locales.lua
+Core.lua
+Meter.lua
+Keystone.lua
+Consumables.lua
+UI\Window.lua
+UI\MinimapButton.lua
